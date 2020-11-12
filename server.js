@@ -28,6 +28,7 @@ var server = http.createServer(function(request, response){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`<h1>傅英俊是帅哥，穿大裤衩的时候特别帅</h1>`)
+    response.write(`/x`)
     response.end()
   } else if(path === '/x'){
     response.statusCode = 200
